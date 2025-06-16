@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="1200" height="102" onload="init(evt)" viewBox="0 0 1200 102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="12800" height="102" onload="init(evt)" viewBox="0 0 12800 102" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -421,20 +421,20 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="1200.0" height="102.0" fill="url(#background)"  />
-<text id="title" x="600.00" y="24" >Flame Graph</text>
+<rect x="0.0" y="0" width="12800.0" height="102.0" fill="url(#background)"  />
+<text id="title" x="6400.00" y="24" >Flame Graph</text>
 <text id="details" x="10.00" y="85" > </text>
 <text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
-<text id="search" x="1090.00" y="24" >Search</text>
-<text id="ignorecase" x="1174.00" y="24" >ic</text>
-<text id="matched" x="1090.00" y="85" > </text>
+<text id="search" x="12690.00" y="24" >Search</text>
+<text id="ignorecase" x="12774.00" y="24" >ic</text>
+<text id="matched" x="12690.00" y="85" > </text>
 <g id="frames">
 <g >
-<title>«flakes-internal»/call-flake.nix:5:1 (1 samples, 100.00%)</title><rect x="10.0" y="37" width="1180.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<title>«flakes-internal»/call-flake.nix:5:1 (1 samples, 100.00%)</title><rect x="10.0" y="37" width="12780.0" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
 <text  x="13.00" y="47.5" >«flakes-internal»/call-flake.nix:5:1</text>
 </g>
 <g >
-<title>all (1 samples, 100%)</title><rect x="10.0" y="53" width="1180.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<title>all (1 samples, 100%)</title><rect x="10.0" y="53" width="12780.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
 <text  x="13.00" y="63.5" ></text>
 </g>
 </g>
