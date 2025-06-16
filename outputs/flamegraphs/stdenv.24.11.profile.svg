@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" width="12800" height="1382" onload="init(evt)" viewBox="0 0 12800 1382" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg version="1.1" width="12800" height="2028" onload="init(evt)" viewBox="0 0 12800 2028" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <!-- Flame graph stack visualization. See https://github.com/brendangregg/FlameGraph for latest version, and http://www.brendangregg.com/flamegraphs.html for examples. -->
 <!-- NOTES:  -->
 <defs>
@@ -10,11 +10,11 @@
 	</linearGradient>
 </defs>
 <style type="text/css">
-	text { font-family:Verdana; font-size:12px; fill:rgb(0,0,0); }
+	text { font-family:Verdana; font-size:10px; fill:rgb(0,0,0); }
 	#search, #ignorecase { opacity:0.1; cursor:pointer; }
 	#search:hover, #search.show, #ignorecase:hover, #ignorecase.show { opacity:1; }
 	#subtitle { text-anchor:middle; font-color:rgb(160,160,160); }
-	#title { text-anchor:middle; font-size:17px}
+	#title { text-anchor:middle; font-size:15px}
 	#unzoom { cursor:pointer; }
 	#frames > *:hover { stroke:black; stroke-width:0.5; cursor:pointer; }
 	.hide { display:none; }
@@ -162,7 +162,7 @@
 		t.attributes.x.value = parseFloat(r.attributes.x.value) + 3;
 
 		// Smaller than this size won't fit anything
-		if (w < 2 * 12 * 0.59) {
+		if (w < 2 * 10 * 0.59) {
 			t.textContent = "";
 			return;
 		}
@@ -421,873 +421,873 @@
 	}
 ]]>
 </script>
-<rect x="0.0" y="0" width="12800.0" height="1382.0" fill="url(#background)"  />
-<text id="title" x="6400.00" y="24" >Flame Graph</text>
-<text id="details" x="10.00" y="1365" > </text>
-<text id="unzoom" x="10.00" y="24" class="hide">Reset Zoom</text>
-<text id="search" x="12690.00" y="24" >Search</text>
-<text id="ignorecase" x="12774.00" y="24" >ic</text>
-<text id="matched" x="12690.00" y="1365" > </text>
+<rect x="0.0" y="0" width="12800.0" height="2028.0" fill="url(#background)"  />
+<text id="title" x="6400.00" y="20" >Flame Graph</text>
+<text id="details" x="10.00" y="2013" > </text>
+<text id="unzoom" x="10.00" y="20" class="hide">Reset Zoom</text>
+<text id="search" x="12690.00" y="20" >Search</text>
+<text id="ignorecase" x="12774.00" y="20" >ic</text>
+<text id="matched" x="12690.00" y="2013" > </text>
 <g id="frames">
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (12 samples, 70.59%)</title><rect x="10.0" y="1125" width="9021.2" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="1135.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="11286.5" y="1735" width="751.7" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="11289.47" y="1749.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8 (1 samples, 5.88%)</title><rect x="8279.4" y="789" width="751.8" height="15.0" fill="rgb(238,152,36)" rx="2" ry="2" />
-<text  x="8282.41" y="799.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (4 samples, 23.53%)</title><rect x="6024.1" y="1183" width="3007.1" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="1197.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (5 samples, 29.41%)</title><rect x="10.0" y="533" width="3758.8" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="543.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1460:11:primop elemAt (1 samples, 5.88%)</title><rect x="1513.5" y="103" width="751.8" height="23.0" fill="rgb(235,141,33)" rx="2" ry="2" />
+<text  x="1516.53" y="117.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1460:11:primop elemAt</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="149" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="1516.53" y="159.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (12 samples, 70.59%)</title><rect x="10.0" y="1423" width="9021.2" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="1437.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:649:12:isBuiltByNixpkgsCompiler (12 samples, 70.59%)</title><rect x="10.0" y="949" width="9021.2" height="15.0" fill="rgb(254,226,54)" rx="2" ry="2" />
-<text  x="13.00" y="959.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:649:12:isBuiltByNixpkgsCompiler</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-glibc-bootstrapFiles (1 samples, 5.88%)</title><rect x="3768.8" y="727" width="751.8" height="23.0" fill="rgb(230,118,28)" rx="2" ry="2" />
+<text  x="3771.82" y="741.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-glibc-bootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="117" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="127.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="127" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="1516.53" y="141.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs (6 samples, 35.29%)</title><rect x="10.0" y="709" width="4510.6" height="15.0" fill="rgb(247,195,46)" rx="2" ry="2" />
-<text  x="13.00" y="719.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="223" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="13.00" y="237.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (5 samples, 29.41%)</title><rect x="5272.4" y="837" width="3758.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="5275.35" y="847.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-wrapper-2.43.1 (1 samples, 5.88%)</title><rect x="6024.1" y="1063" width="751.8" height="23.0" fill="rgb(233,130,31)" rx="2" ry="2" />
+<text  x="6027.12" y="1077.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-wrapper-2.43.1</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="213" width="751.7" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="764.76" y="223.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="3768.8" y="703" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="3771.82" y="717.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="181" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="1516.53" y="191.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:126:13:optionalString (1 samples, 5.88%)</title><rect x="11286.5" y="1687" width="751.7" height="23.0" fill="rgb(207,13,3)" rx="2" ry="2" />
+<text  x="11289.47" y="1701.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:126:13:optionalString</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:504:5:makeSearchPath (1 samples, 5.88%)</title><rect x="10534.7" y="1061" width="751.8" height="15.0" fill="rgb(236,145,34)" rx="2" ry="2" />
-<text  x="10537.71" y="1071.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:504:5:makeSearchPath</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="199" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="1516.53" y="213.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18 (1 samples, 5.88%)</title><rect x="3768.8" y="533" width="751.8" height="15.0" fill="rgb(221,77,18)" rx="2" ry="2" />
-<text  x="3771.82" y="543.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="10.0" y="1183" width="4510.6" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="13.00" y="1197.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="213" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="223.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:319:12:isFromBootstrapFiles (5 samples, 29.41%)</title><rect x="10.0" y="727" width="3758.8" height="23.0" fill="rgb(209,19,4)" rx="2" ry="2" />
+<text  x="13.00" y="741.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:319:12:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:42:18:callLibs (1 samples, 5.88%)</title><rect x="4520.6" y="741" width="751.8" height="15.0" fill="rgb(214,43,10)" rx="2" ry="2" />
-<text  x="4523.59" y="751.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:42:18:callLibs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:404:43 (1 samples, 5.88%)</title><rect x="8279.4" y="1039" width="751.8" height="23.0" fill="rgb(221,75,17)" rx="2" ry="2" />
+<text  x="8282.41" y="1053.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:404:43</text>
 </g>
 <g >
-<title>«flakes-internal»/call-flake.nix:5:1 (1 samples, 5.88%)</title><rect x="12038.2" y="1317" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="12041.24" y="1327.5" >«flakes-internal»/call-flake.nix:5:1</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="895" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="909.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (12 samples, 70.59%)</title><rect x="10.0" y="1189" width="9021.2" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="1199.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:190:1 (12 samples, 70.59%)</title><rect x="10.0" y="1903" width="9021.2" height="23.0" fill="rgb(210,27,6)" rx="2" ry="2" />
+<text  x="13.00" y="1917.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:190:1</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:19:4 (1 samples, 5.88%)</title><rect x="8279.4" y="565" width="751.8" height="15.0" fill="rgb(223,85,20)" rx="2" ry="2" />
-<text  x="8282.41" y="575.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:19:4</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="1039" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="1053.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:linux-headers-6.10 (3 samples, 17.65%)</title><rect x="6024.1" y="789" width="2255.3" height="15.0" fill="rgb(227,103,24)" rx="2" ry="2" />
-<text  x="6027.12" y="799.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:linux-headers-6.10</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="151" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="1516.53" y="165.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="117" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="13.00" y="127.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (6 samples, 35.29%)</title><rect x="10.0" y="1279" width="4510.6" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="1293.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="10534.7" y="1205" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="10537.71" y="1215.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-2.40-66 (5 samples, 29.41%)</title><rect x="5272.4" y="1207" width="3758.8" height="23.0" fill="rgb(218,62,14)" rx="2" ry="2" />
+<text  x="5275.35" y="1221.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-2.40-66</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-stdenv-linux (1 samples, 5.88%)</title><rect x="3768.8" y="469" width="751.8" height="15.0" fill="rgb(232,126,30)" rx="2" ry="2" />
-<text  x="3771.82" y="479.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-stdenv-linux</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assertValidity (1 samples, 5.88%)</title><rect x="4520.6" y="1231" width="751.8" height="23.0" fill="rgb(244,182,43)" rx="2" ry="2" />
+<text  x="4523.59" y="1245.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assertValidity</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="133" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="1516.53" y="143.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:35:7:primop mapAttrs (1 samples, 5.88%)</title><rect x="1513.5" y="31" width="751.8" height="23.0" fill="rgb(251,213,51)" rx="2" ry="2" />
+<text  x="1516.53" y="45.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:35:7:primop mapAttrs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop isString (1 samples, 5.88%)</title><rect x="10534.7" y="1141" width="751.8" height="15.0" fill="rgb(252,217,52)" rx="2" ry="2" />
-<text  x="10537.71" y="1151.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop..</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:autoreconf-hook (1 samples, 5.88%)</title><rect x="8279.4" y="943" width="751.8" height="23.0" fill="rgb(226,96,23)" rx="2" ry="2" />
+<text  x="8282.41" y="957.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:autoreconf-hook</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:483:13:hasDeniedUnfreeLicense (1 samples, 5.88%)</title><rect x="4520.6" y="805" width="751.8" height="15.0" fill="rgb(236,147,35)" rx="2" ry="2" />
-<text  x="4523.59" y="815.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:483:13:hasDeniedUn..</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (5 samples, 29.41%)</title><rect x="10.0" y="511" width="3758.8" height="23.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="13.00" y="525.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="645" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="655.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bison-3.8.2 (1 samples, 5.88%)</title><rect x="6024.1" y="871" width="751.8" height="23.0" fill="rgb(246,190,45)" rx="2" ry="2" />
+<text  x="6027.12" y="885.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bison-3.8.2</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="661" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="8282.41" y="671.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (12 samples, 70.59%)</title><rect x="10.0" y="1471" width="9021.2" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="1485.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (12 samples, 70.59%)</title><rect x="10.0" y="1205" width="9021.2" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="1215.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (2 samples, 11.76%)</title><rect x="10.0" y="343" width="1503.5" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="13.00" y="357.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:zlib-1.3.1 (1 samples, 5.88%)</title><rect x="10534.7" y="997" width="751.8" height="15.0" fill="rgb(232,128,30)" rx="2" ry="2" />
-<text  x="10537.71" y="1007.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:zlib-1.3.1</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assertValidity (1 samples, 5.88%)</title><rect x="10534.7" y="1399" width="751.8" height="23.0" fill="rgb(244,182,43)" rx="2" ry="2" />
+<text  x="10537.71" y="1413.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assertValidity</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (2 samples, 11.76%)</title><rect x="6775.9" y="709" width="1503.5" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6778.88" y="719.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage3-stdenv-linux (1 samples, 5.88%)</title><rect x="10534.7" y="1423" width="751.8" height="23.0" fill="rgb(213,37,8)" rx="2" ry="2" />
+<text  x="10537.71" y="1437.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage3-stdenv-linux</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bzip2-1.0.8 (1 samples, 5.88%)</title><rect x="8279.4" y="677" width="751.8" height="15.0" fill="rgb(208,15,3)" rx="2" ry="2" />
-<text  x="8282.41" y="687.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bzip2-1.0.8</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (12 samples, 70.59%)</title><rect x="10.0" y="1639" width="9021.2" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="1653.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>&lt;nix/fetchurl.nix&gt;:41:1 (1 samples, 5.88%)</title><rect x="6024.1" y="549" width="751.8" height="15.0" fill="rgb(216,51,12)" rx="2" ry="2" />
-<text  x="6027.12" y="559.5" >&lt;nix/fetchurl.nix&gt;:41:1</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-stdenv-linux (1 samples, 5.88%)</title><rect x="3768.8" y="679" width="751.8" height="23.0" fill="rgb(232,126,30)" rx="2" ry="2" />
+<text  x="3771.82" y="693.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-stdenv-linux</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="101" width="751.7" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="764.76" y="111.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop isString (1 samples, 5.88%)</title><rect x="10534.7" y="1687" width="751.8" height="23.0" fill="rgb(252,217,52)" rx="2" ry="2" />
+<text  x="10537.71" y="1701.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop isString</text>
 </g>
 <g >
-<title>«none»:0 (1 samples, 5.88%)</title><rect x="10534.7" y="1173" width="751.8" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="10537.71" y="1183.5" >«none»:0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1466:7:binaryMerge (4 samples, 23.53%)</title><rect x="10.0" y="367" width="3007.1" height="23.0" fill="rgb(219,67,16)" rx="2" ry="2" />
+<text  x="13.00" y="381.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1466:7:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="101" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="13.00" y="111.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:363:13:makeSearchPathOutput (1 samples, 5.88%)</title><rect x="10534.7" y="1591" width="751.8" height="23.0" fill="rgb(229,112,26)" rx="2" ry="2" />
+<text  x="10537.71" y="1605.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:363:13:makeSearchPathOutput</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (12 samples, 70.59%)</title><rect x="10.0" y="1109" width="9021.2" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="1119.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:63:isFromBootstrapFiles (1 samples, 5.88%)</title><rect x="3768.8" y="871" width="751.8" height="23.0" fill="rgb(246,190,45)" rx="2" ry="2" />
+<text  x="3771.82" y="885.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:63:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (6 samples, 35.29%)</title><rect x="10.0" y="677" width="4510.6" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="687.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8 (1 samples, 5.88%)</title><rect x="8279.4" y="1159" width="751.8" height="23.0" fill="rgb(238,152,36)" rx="2" ry="2" />
+<text  x="8282.41" y="1173.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="149" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="13.00" y="159.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:42:18:mergeAttrsList (4 samples, 23.53%)</title><rect x="10.0" y="391" width="3007.1" height="23.0" fill="rgb(213,36,8)" rx="2" ry="2" />
+<text  x="13.00" y="405.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:42:18:mergeAttrsList</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:78:13:go (12 samples, 70.59%)</title><rect x="10.0" y="1237" width="9021.2" height="15.0" fill="rgb(213,37,8)" rx="2" ry="2" />
-<text  x="13.00" y="1247.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:78:13:go</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (1 samples, 5.88%)</title><rect x="6024.1" y="919" width="751.8" height="23.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="6027.12" y="933.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assertMsg (1 samples, 5.88%)</title><rect x="10534.7" y="1157" width="751.8" height="15.0" fill="rgb(245,188,45)" rx="2" ry="2" />
-<text  x="10537.71" y="1167.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assert..</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="10534.7" y="1447" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="10537.71" y="1461.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:41:namesForShard (1 samples, 5.88%)</title><rect x="1513.5" y="53" width="751.8" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
-<text  x="1516.53" y="63.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:41:namesForShard</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="4520.6" y="1351" width="4510.6" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="4523.59" y="1365.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (6 samples, 35.29%)</title><rect x="10.0" y="629" width="4510.6" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="639.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs (1 samples, 5.88%)</title><rect x="3768.8" y="799" width="751.8" height="23.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="3771.82" y="813.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:362:19:optionals (1 samples, 5.88%)</title><rect x="10534.7" y="1093" width="751.8" height="15.0" fill="rgb(230,116,27)" rx="2" ry="2" />
-<text  x="10537.71" y="1103.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:362:19:opt..</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import (1 samples, 5.88%)</title><rect x="6024.1" y="823" width="751.8" height="23.0" fill="rgb(245,187,44)" rx="2" ry="2" />
+<text  x="6027.12" y="837.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-gcc-wrapper-13.3.0 (1 samples, 5.88%)</title><rect x="10534.7" y="1221" width="751.8" height="15.0" fill="rgb(205,0,0)" rx="2" ry="2" />
-<text  x="10537.71" y="1231.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-gcc-wrapper-13.3.0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="295" width="751.7" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="764.76" y="309.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:344:29:primop toString (1 samples, 5.88%)</title><rect x="10534.7" y="1109" width="751.8" height="15.0" fill="rgb(254,227,54)" rx="2" ry="2" />
-<text  x="10537.71" y="1119.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:344:29:pri..</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="271" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="285.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (5 samples, 29.41%)</title><rect x="10.0" y="581" width="3758.8" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="13.00" y="591.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:14:24:primop import (1 samples, 5.88%)</title><rect x="4520.6" y="1063" width="751.8" height="23.0" fill="rgb(248,200,47)" rx="2" ry="2" />
+<text  x="4523.59" y="1077.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:14:24:primop import</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (12 samples, 70.59%)</title><rect x="10.0" y="997" width="9021.2" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="1007.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="271" width="751.7" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="764.76" y="285.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="197" width="751.7" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="764.76" y="207.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="11286.5" y="1783" width="751.7" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="11289.47" y="1797.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-glibc-bootstrapFiles (1 samples, 5.88%)</title><rect x="3768.8" y="501" width="751.8" height="15.0" fill="rgb(230,118,28)" rx="2" ry="2" />
-<text  x="3771.82" y="511.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage0-glibc-bootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:42:18:callLibs (1 samples, 5.88%)</title><rect x="4520.6" y="1087" width="751.8" height="23.0" fill="rgb(214,43,10)" rx="2" ry="2" />
+<text  x="4523.59" y="1101.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:42:18:callLibs</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:stdenv-linux (4 samples, 23.53%)</title><rect x="9031.2" y="1317" width="3007.0" height="15.0" fill="rgb(205,3,0)" rx="2" ry="2" />
-<text  x="9034.18" y="1327.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:stdenv-linux</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (2 samples, 11.76%)</title><rect x="10534.7" y="1879" width="1503.5" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="10537.71" y="1893.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:42:18:mergeAttrsList (4 samples, 23.53%)</title><rect x="10.0" y="277" width="3007.1" height="15.0" fill="rgb(213,36,8)" rx="2" ry="2" />
-<text  x="13.00" y="287.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:42:18:mergeAttrsList</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5 (1 samples, 5.88%)</title><rect x="3768.8" y="823" width="751.8" height="23.0" fill="rgb(250,208,49)" rx="2" ry="2" />
+<text  x="3771.82" y="837.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (6 samples, 35.29%)</title><rect x="10.0" y="741" width="4510.6" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="751.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="199" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="213.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="149" width="751.7" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="764.76" y="159.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assertMsg (1 samples, 5.88%)</title><rect x="8279.4" y="1111" width="751.8" height="23.0" fill="rgb(245,188,45)" rx="2" ry="2" />
+<text  x="8282.41" y="1125.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assertMsg</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:610:18 (1 samples, 5.88%)</title><rect x="4520.6" y="821" width="751.8" height="15.0" fill="rgb(228,107,25)" rx="2" ry="2" />
-<text  x="4523.59" y="831.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:610:18</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:913:12:isBuiltByNixpkgsCompiler (12 samples, 70.59%)</title><rect x="10.0" y="1735" width="9021.2" height="23.0" fill="rgb(243,174,41)" rx="2" ry="2" />
+<text  x="13.00" y="1749.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:913:12:isBuiltByNixpkgsCompiler</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gettext-0.21.1 (1 samples, 5.88%)</title><rect x="6024.1" y="661" width="751.8" height="15.0" fill="rgb(232,128,30)" rx="2" ry="2" />
-<text  x="6027.12" y="671.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gettext-0.21.1</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (5 samples, 29.41%)</title><rect x="10.0" y="703" width="3758.8" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="717.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (12 samples, 70.59%)</title><rect x="10.0" y="981" width="9021.2" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="991.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>&lt;nix/fetchurl.nix&gt;:41:1 (1 samples, 5.88%)</title><rect x="7527.6" y="943" width="751.8" height="23.0" fill="rgb(216,51,12)" rx="2" ry="2" />
+<text  x="7530.65" y="957.5" >&lt;nix/fetchurl.nix&gt;:41:1</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:724:12:isBuiltByNixpkgsCompiler (12 samples, 70.59%)</title><rect x="10.0" y="1061" width="9021.2" height="15.0" fill="rgb(243,174,41)" rx="2" ry="2" />
-<text  x="13.00" y="1071.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:724:12:isBuiltByNixpkgsCompiler</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (12 samples, 70.59%)</title><rect x="10.0" y="1543" width="9021.2" height="23.0" fill="rgb(241,165,39)" rx="2" ry="2" />
+<text  x="13.00" y="1557.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (6 samples, 35.29%)</title><rect x="10.0" y="885" width="4510.6" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="895.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/impure.nix:113:1:primop import (12 samples, 70.59%)</title><rect x="10.0" y="1927" width="9021.2" height="23.0" fill="rgb(206,6,1)" rx="2" ry="2" />
+<text  x="13.00" y="1941.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/impure.nix:113:1:primop import</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (12 samples, 70.59%)</title><rect x="10.0" y="1077" width="9021.2" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="1087.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="295" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="309.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:471:12:isBuiltByBootstrapFilesCompiler (6 samples, 35.29%)</title><rect x="10.0" y="725" width="4510.6" height="15.0" fill="rgb(217,58,14)" rx="2" ry="2" />
-<text  x="13.00" y="735.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:471:12:isBuiltByBootstrapFilesCompiler</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (5 samples, 29.41%)</title><rect x="10.0" y="679" width="3758.8" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="693.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:35 (1 samples, 5.88%)</title><rect x="1513.5" y="69" width="751.8" height="15.0" fill="rgb(248,199,47)" rx="2" ry="2" />
-<text  x="1516.53" y="79.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:35</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:78:13:go (12 samples, 70.59%)</title><rect x="10.0" y="1831" width="9021.2" height="23.0" fill="rgb(213,37,8)" rx="2" ry="2" />
+<text  x="13.00" y="1845.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:78:13:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable (1 samples, 5.88%)</title><rect x="3768.8" y="581" width="751.8" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="3771.82" y="591.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="943" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="957.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (12 samples, 70.59%)</title><rect x="10.0" y="1093" width="9021.2" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="1103.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:33:4 (1 samples, 5.88%)</title><rect x="6775.9" y="991" width="751.7" height="23.0" fill="rgb(249,204,48)" rx="2" ry="2" />
+<text  x="6778.88" y="1005.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:33:4</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="101" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="1516.53" y="111.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:801:16:getOutput (1 samples, 5.88%)</title><rect x="9031.2" y="1927" width="751.7" height="23.0" fill="rgb(240,165,39)" rx="2" ry="2" />
+<text  x="9034.18" y="1941.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:801:16:getOutput</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (2 samples, 11.76%)</title><rect x="10534.7" y="1253" width="1503.5" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
-<text  x="10537.71" y="1263.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs (6 samples, 35.29%)</title><rect x="4520.6" y="1279" width="4510.6" height="23.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="4523.59" y="1293.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:109:49:isUnfree (1 samples, 5.88%)</title><rect x="4520.6" y="773" width="751.8" height="15.0" fill="rgb(227,103,24)" rx="2" ry="2" />
-<text  x="4523.59" y="783.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:109:49:isUnfree</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-2.43.1 (1 samples, 5.88%)</title><rect x="6024.1" y="1015" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="6027.12" y="1029.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-2.43.1</text>
 </g>
 <g >
-<title>/nix/store/6v3sq8m0y8fa795k04r7yrkncj1lqmcg-source/flake.nix:23:17:primop import (12 samples, 70.59%)</title><rect x="10.0" y="1317" width="9021.2" height="15.0" fill="rgb(206,8,2)" rx="2" ry="2" />
-<text  x="13.00" y="1327.5" >/nix/store/6v3sq8m0y8fa795k04r7yrkncj1lqmcg-source/flake.nix:23:17:primop import</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnugrep-3.11 (1 samples, 5.88%)</title><rect x="9782.9" y="1903" width="751.8" height="23.0" fill="rgb(217,58,13)" rx="2" ry="2" />
+<text  x="9785.94" y="1917.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnugrep-3.11</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (4 samples, 23.53%)</title><rect x="6024.1" y="805" width="3007.1" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="815.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (5 samples, 29.41%)</title><rect x="10.0" y="847" width="3758.8" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="13.00" y="861.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/by-name/bi/bison/package.nix:19:9 (1 samples, 5.88%)</title><rect x="6024.1" y="581" width="751.8" height="15.0" fill="rgb(224,88,21)" rx="2" ry="2" />
-<text  x="6027.12" y="591.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/by-name/bi/bison/package.nix:19:9</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (12 samples, 70.59%)</title><rect x="10.0" y="1687" width="9021.2" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="13.00" y="1701.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (12 samples, 70.59%)</title><rect x="10.0" y="1013" width="9021.2" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="1023.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/glibc/default.nix:119:12:canExecute (1 samples, 5.88%)</title><rect x="5272.4" y="1183" width="751.7" height="23.0" fill="rgb(231,122,29)" rx="2" ry="2" />
+<text  x="5275.35" y="1197.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/glibc/default.nix:119:12:canExecute</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:250:9 (1 samples, 5.88%)</title><rect x="9782.9" y="1205" width="751.8" height="15.0" fill="rgb(224,91,21)" rx="2" ry="2" />
-<text  x="9785.94" y="1215.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default...</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (6 samples, 35.29%)</title><rect x="10.0" y="1159" width="4510.6" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="1173.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/licenses.nix:37:1:primop mapAttrs (1 samples, 5.88%)</title><rect x="4520.6" y="709" width="751.8" height="15.0" fill="rgb(235,139,33)" rx="2" ry="2" />
-<text  x="4523.59" y="719.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/licenses.nix:37:1:primop mapAttrs</text>
+<title>«flakes-internal»/call-flake.nix:5:1 (1 samples, 5.88%)</title><rect x="12038.2" y="1951" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="12041.24" y="1965.5" >«flakes-internal»/call-flake.nix:5:1</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (2 samples, 11.76%)</title><rect x="1513.5" y="245" width="1503.6" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="1516.53" y="255.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (2 samples, 11.76%)</title><rect x="10534.7" y="1855" width="1503.5" height="23.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="10537.71" y="1869.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-2.43.1 (1 samples, 5.88%)</title><rect x="6024.1" y="693" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="6027.12" y="703.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-2.43.1</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gcc-13.3.0 (1 samples, 5.88%)</title><rect x="10534.7" y="1759" width="751.8" height="23.0" fill="rgb(212,35,8)" rx="2" ry="2" />
+<text  x="10537.71" y="1773.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gcc-13.3.0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="117" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="1516.53" y="127.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>&lt;nix/fetchurl.nix&gt;:41:1 (1 samples, 5.88%)</title><rect x="6024.1" y="799" width="751.8" height="23.0" fill="rgb(216,51,12)" rx="2" ry="2" />
+<text  x="6027.12" y="813.5" >&lt;nix/fetchurl.nix&gt;:41:1</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:47 (1 samples, 5.88%)</title><rect x="10534.7" y="1029" width="751.8" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="10537.71" y="1039.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:47</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5 (6 samples, 35.29%)</title><rect x="4520.6" y="1303" width="4510.6" height="23.0" fill="rgb(250,208,49)" rx="2" ry="2" />
+<text  x="4523.59" y="1317.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1460:11:primop elemAt (1 samples, 5.88%)</title><rect x="1513.5" y="85" width="751.8" height="15.0" fill="rgb(235,141,33)" rx="2" ry="2" />
-<text  x="1516.53" y="95.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1460:11:primop elemAt</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:20:primop concatStringsSep (1 samples, 5.88%)</title><rect x="10534.7" y="1543" width="751.8" height="23.0" fill="rgb(205,2,0)" rx="2" ry="2" />
+<text  x="10537.71" y="1557.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:20:primop concatStringsSep</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:35:7:primop mapAttrs (1 samples, 5.88%)</title><rect x="1513.5" y="37" width="751.8" height="15.0" fill="rgb(251,213,51)" rx="2" ry="2" />
-<text  x="1516.53" y="47.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:35:7:primop mapAttrs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15 (4 samples, 23.53%)</title><rect x="10.0" y="439" width="3007.1" height="23.0" fill="rgb(229,114,27)" rx="2" ry="2" />
+<text  x="13.00" y="453.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gcc-13.3.0 (1 samples, 5.88%)</title><rect x="10534.7" y="1189" width="751.8" height="15.0" fill="rgb(212,35,8)" rx="2" ry="2" />
-<text  x="10537.71" y="1199.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gcc-13.3.0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (12 samples, 70.59%)</title><rect x="10.0" y="1807" width="9021.2" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="1821.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (3 samples, 17.65%)</title><rect x="6024.1" y="741" width="2255.3" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="751.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (12 samples, 70.59%)</title><rect x="10.0" y="1783" width="9021.2" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="1797.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:363:13:makeSearchPathOutput (1 samples, 5.88%)</title><rect x="10534.7" y="1077" width="751.8" height="15.0" fill="rgb(229,112,26)" rx="2" ry="2" />
-<text  x="10537.71" y="1087.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:363:13:mak..</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:109:49:isUnfree (1 samples, 5.88%)</title><rect x="4520.6" y="1135" width="751.8" height="23.0" fill="rgb(227,103,24)" rx="2" ry="2" />
+<text  x="4523.59" y="1149.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:109:49:isUnfree</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (6 samples, 35.29%)</title><rect x="10.0" y="869" width="4510.6" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="879.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (12 samples, 70.59%)</title><rect x="10.0" y="1519" width="9021.2" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="13.00" y="1533.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage2-gcc-wrapper-13.3.0 (3 samples, 17.65%)</title><rect x="6024.1" y="757" width="2255.3" height="15.0" fill="rgb(217,59,14)" rx="2" ry="2" />
-<text  x="6027.12" y="767.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage2-gcc-wrapper-13.3.0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (2 samples, 11.76%)</title><rect x="1513.5" y="343" width="1503.6" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="1516.53" y="357.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:56:isFromNixpkgs (6 samples, 35.29%)</title><rect x="4520.6" y="933" width="4510.6" height="15.0" fill="rgb(221,76,18)" rx="2" ry="2" />
-<text  x="4523.59" y="943.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:56:isFromNixpkgs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (12 samples, 70.59%)</title><rect x="10.0" y="1663" width="9021.2" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="1677.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5 (6 samples, 35.29%)</title><rect x="4520.6" y="885" width="4510.6" height="15.0" fill="rgb(250,208,49)" rx="2" ry="2" />
-<text  x="4523.59" y="895.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (5 samples, 29.41%)</title><rect x="10.0" y="799" width="3758.8" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="813.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:913:12:isBuiltByNixpkgsCompiler (12 samples, 70.59%)</title><rect x="10.0" y="1173" width="9021.2" height="15.0" fill="rgb(243,174,41)" rx="2" ry="2" />
-<text  x="13.00" y="1183.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:913:12:isBuiltByNixpkgsCompiler</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="127" width="751.7" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="764.76" y="141.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:364:12:isBuiltByBootstrapFilesCompiler (6 samples, 35.29%)</title><rect x="10.0" y="613" width="4510.6" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="13.00" y="623.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:364:12:isBuiltByBootstrapFilesCompiler</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:56:isFromNixpkgs (6 samples, 35.29%)</title><rect x="4520.6" y="1375" width="4510.6" height="23.0" fill="rgb(221,76,18)" rx="2" ry="2" />
+<text  x="4523.59" y="1389.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:56:isFromNixpkgs</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (2 samples, 11.76%)</title><rect x="10534.7" y="1237" width="1503.5" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="10537.71" y="1247.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="223" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="237.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:801:16:getOutput (1 samples, 5.88%)</title><rect x="9031.2" y="1301" width="751.7" height="15.0" fill="rgb(240,165,39)" rx="2" ry="2" />
-<text  x="9034.18" y="1311.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:801:16:getOutput</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnu-config-2024-01-01 (1 samples, 5.88%)</title><rect x="11286.5" y="1759" width="751.7" height="23.0" fill="rgb(218,60,14)" rx="2" ry="2" />
+<text  x="11289.47" y="1773.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnu-config-2024-01-01</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="197" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="207.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (12 samples, 70.59%)</title><rect x="10.0" y="1447" width="9021.2" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="1461.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="117" width="751.7" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="764.76" y="127.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/licenses.nix:37:1:primop mapAttrs (1 samples, 5.88%)</title><rect x="4520.6" y="1039" width="751.8" height="23.0" fill="rgb(235,139,33)" rx="2" ry="2" />
+<text  x="4523.59" y="1053.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/licenses.nix:37:1:primop mapAttrs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assertValidity (1 samples, 5.88%)</title><rect x="10534.7" y="949" width="751.8" height="15.0" fill="rgb(244,182,43)" rx="2" ry="2" />
-<text  x="10537.71" y="959.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assert..</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:187:10 (12 samples, 70.59%)</title><rect x="10.0" y="1879" width="9021.2" height="23.0" fill="rgb(212,32,7)" rx="2" ry="2" />
+<text  x="13.00" y="1893.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:187:10</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="677" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="687.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (4 samples, 23.53%)</title><rect x="10.0" y="487" width="3007.1" height="23.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="13.00" y="501.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="629" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="8282.41" y="639.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="223" width="751.7" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="764.76" y="237.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (6 samples, 35.29%)</title><rect x="10.0" y="757" width="4510.6" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="767.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (5 samples, 29.41%)</title><rect x="5272.4" y="1231" width="3758.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="5275.35" y="1245.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:58:4:primop mapAttrs (4 samples, 23.53%)</title><rect x="10.0" y="293" width="3007.1" height="15.0" fill="rgb(238,154,36)" rx="2" ry="2" />
-<text  x="13.00" y="303.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:58:4:primop mapAttrs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:86:12:optionals (1 samples, 5.88%)</title><rect x="3768.8" y="655" width="751.8" height="23.0" fill="rgb(225,93,22)" rx="2" ry="2" />
+<text  x="3771.82" y="669.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:86:12:optionals</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8 (1 samples, 5.88%)</title><rect x="9782.9" y="1221" width="751.8" height="15.0" fill="rgb(238,152,36)" rx="2" ry="2" />
-<text  x="9785.94" y="1231.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:98:8:primop isAttrs (1 samples, 5.88%)</title><rect x="4520.6" y="1111" width="751.8" height="23.0" fill="rgb(207,9,2)" rx="2" ry="2" />
+<text  x="4523.59" y="1125.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:98:8:primop isAttrs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs (6 samples, 35.29%)</title><rect x="4520.6" y="869" width="4510.6" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
-<text  x="4523.59" y="879.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:167:5:primop import (5 samples, 29.41%)</title><rect x="10.0" y="631" width="3758.8" height="23.0" fill="rgb(236,143,34)" rx="2" ry="2" />
+<text  x="13.00" y="645.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:167:5:primop import</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:63:isFromBootstrapFiles (1 samples, 5.88%)</title><rect x="3768.8" y="597" width="751.8" height="15.0" fill="rgb(246,190,45)" rx="2" ry="2" />
-<text  x="3771.82" y="607.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:63:isFromBootstrapF..</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage2-gcc-wrapper-13.3.0 (3 samples, 17.65%)</title><rect x="6024.1" y="1111" width="2255.3" height="23.0" fill="rgb(217,59,14)" rx="2" ry="2" />
+<text  x="6027.12" y="1125.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage2-gcc-wrapper-13.3.0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="133" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="143.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:483:13:hasDeniedUnfreeLicense (1 samples, 5.88%)</title><rect x="4520.6" y="1183" width="751.8" height="23.0" fill="rgb(236,147,35)" rx="2" ry="2" />
+<text  x="4523.59" y="1197.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:483:13:hasDeniedUnfreeLicense</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (6 samples, 35.29%)</title><rect x="10.0" y="773" width="4510.6" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="783.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (5 samples, 29.41%)</title><rect x="10.0" y="823" width="3758.8" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="837.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="4520.6" y="917" width="4510.6" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="4523.59" y="927.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs (6 samples, 35.29%)</title><rect x="10.0" y="1039" width="4510.6" height="23.0" fill="rgb(247,195,46)" rx="2" ry="2" />
+<text  x="13.00" y="1053.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:319:12:isFromBootstrapFiles (5 samples, 29.41%)</title><rect x="10.0" y="501" width="3758.8" height="15.0" fill="rgb(209,19,4)" rx="2" ry="2" />
-<text  x="13.00" y="511.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:319:12:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:649:12:isBuiltByNixpkgsCompiler (12 samples, 70.59%)</title><rect x="10.0" y="1399" width="9021.2" height="23.0" fill="rgb(254,226,54)" rx="2" ry="2" />
+<text  x="13.00" y="1413.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:649:12:isBuiltByNixpkgsCompiler</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15 (4 samples, 23.53%)</title><rect x="10.0" y="309" width="3007.1" height="15.0" fill="rgb(229,114,27)" rx="2" ry="2" />
-<text  x="13.00" y="319.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (6 samples, 35.29%)</title><rect x="10.0" y="991" width="4510.6" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="1005.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (12 samples, 70.59%)</title><rect x="10.0" y="965" width="9021.2" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="975.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="199" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="13.00" y="213.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (1 samples, 5.88%)</title><rect x="6024.1" y="629" width="751.8" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
-<text  x="6027.12" y="639.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bzip2-1.0.8 (1 samples, 5.88%)</title><rect x="8279.4" y="991" width="751.8" height="23.0" fill="rgb(208,15,3)" rx="2" ry="2" />
+<text  x="8282.41" y="1005.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bzip2-1.0.8</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:14:24:primop import (1 samples, 5.88%)</title><rect x="4520.6" y="725" width="751.8" height="15.0" fill="rgb(248,200,47)" rx="2" ry="2" />
-<text  x="4523.59" y="735.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/default.nix:14:24:primop import</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="9782.9" y="1831" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="9785.94" y="1845.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="165" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="1516.53" y="175.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (6 samples, 35.29%)</title><rect x="10.0" y="919" width="4510.6" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="933.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (1 samples, 5.88%)</title><rect x="6775.9" y="693" width="751.7" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
-<text  x="6778.88" y="703.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (12 samples, 70.59%)</title><rect x="10.0" y="1615" width="9021.2" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="1629.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="10534.7" y="1013" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="10537.71" y="1023.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gmp-6.3.0 (1 samples, 5.88%)</title><rect x="7527.6" y="1015" width="751.8" height="23.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="7530.65" y="1029.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gmp-6.3.0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (6 samples, 35.29%)</title><rect x="10.0" y="901" width="4510.6" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="911.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (5 samples, 29.41%)</title><rect x="10.0" y="535" width="3758.8" height="23.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="13.00" y="549.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (4 samples, 23.53%)</title><rect x="10.0" y="325" width="3007.1" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="13.00" y="335.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (2 samples, 11.76%)</title><rect x="1513.5" y="319" width="1503.6" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="1516.53" y="333.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (5 samples, 29.41%)</title><rect x="10.0" y="549" width="3758.8" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="559.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="1015" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="8282.41" y="1029.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (2 samples, 11.76%)</title><rect x="10534.7" y="1269" width="1503.5" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="10537.71" y="1279.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="967" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="8282.41" y="981.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop isString (1 samples, 5.88%)</title><rect x="8279.4" y="741" width="751.8" height="15.0" fill="rgb(252,217,52)" rx="2" ry="2" />
-<text  x="8282.41" y="751.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop..</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:linux-headers-6.10 (3 samples, 17.65%)</title><rect x="6024.1" y="1159" width="2255.3" height="23.0" fill="rgb(227,103,24)" rx="2" ry="2" />
+<text  x="6027.12" y="1173.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:linux-headers-6.10</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:187:10 (12 samples, 70.59%)</title><rect x="10.0" y="1269" width="9021.2" height="15.0" fill="rgb(212,32,7)" rx="2" ry="2" />
-<text  x="13.00" y="1279.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:187:10</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="295" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="13.00" y="309.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (6 samples, 35.29%)</title><rect x="10.0" y="933" width="4510.6" height="15.0" fill="rgb(241,165,39)" rx="2" ry="2" />
-<text  x="13.00" y="943.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="3768.8" y="751" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="3771.82" y="765.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="613" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="623.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (3 samples, 17.65%)</title><rect x="6024.1" y="1087" width="2255.3" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="1101.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assertMsg (1 samples, 5.88%)</title><rect x="8279.4" y="757" width="751.8" height="15.0" fill="rgb(245,188,45)" rx="2" ry="2" />
-<text  x="8282.41" y="767.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assert..</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-gcc-wrapper-13.3.0 (1 samples, 5.88%)</title><rect x="10534.7" y="1807" width="751.8" height="23.0" fill="rgb(205,0,0)" rx="2" ry="2" />
+<text  x="10537.71" y="1821.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-gcc-wrapper-13.3.0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:166:1:dfold (12 samples, 70.59%)</title><rect x="10.0" y="1253" width="9021.2" height="15.0" fill="rgb(212,33,7)" rx="2" ry="2" />
-<text  x="13.00" y="1263.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:166:1:dfold</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (1 samples, 5.88%)</title><rect x="6775.9" y="1015" width="751.7" height="23.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="6778.88" y="1029.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="3768.8" y="485" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="3771.82" y="495.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (5 samples, 29.41%)</title><rect x="10.0" y="775" width="3758.8" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="789.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="181" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="13.00" y="191.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-stdenv-linux (1 samples, 5.88%)</title><rect x="11286.5" y="1711" width="751.7" height="23.0" fill="rgb(206,7,1)" rx="2" ry="2" />
+<text  x="11289.47" y="1725.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-stdenv-linux</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="11286.5" y="1205" width="751.7" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="11289.47" y="1215.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (5 samples, 29.41%)</title><rect x="10.0" y="751" width="3758.8" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="765.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs (5 samples, 29.41%)</title><rect x="10.0" y="597" width="3758.8" height="15.0" fill="rgb(247,195,46)" rx="2" ry="2" />
-<text  x="13.00" y="607.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/by-name/bi/bison/package.nix:19:9 (1 samples, 5.88%)</title><rect x="6024.1" y="847" width="751.8" height="23.0" fill="rgb(224,88,21)" rx="2" ry="2" />
+<text  x="6027.12" y="861.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/by-name/bi/bison/package.nix:19:9</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/stage.nix:422:1:fix (5 samples, 29.41%)</title><rect x="10.0" y="421" width="3758.8" height="15.0" fill="rgb(236,146,35)" rx="2" ry="2" />
-<text  x="13.00" y="431.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/stage.nix:422:1:fix</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:update-autotools-gnu-config-scripts-hook (1 samples, 5.88%)</title><rect x="11286.5" y="1807" width="751.7" height="23.0" fill="rgb(236,143,34)" rx="2" ry="2" />
+<text  x="11289.47" y="1821.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:update-autotools-gnu-config-scripts-hook</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:190:1 (12 samples, 70.59%)</title><rect x="10.0" y="1285" width="9021.2" height="15.0" fill="rgb(210,27,6)" rx="2" ry="2" />
-<text  x="13.00" y="1295.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:190:1</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="991" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="1005.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>«none»:0 (1 samples, 5.88%)</title><rect x="8279.4" y="773" width="751.8" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="8282.41" y="783.5" >«none»:0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (12 samples, 70.59%)</title><rect x="10.0" y="1759" width="9021.2" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="1773.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (6 samples, 35.29%)</title><rect x="10.0" y="661" width="4510.6" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="671.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (6 samples, 35.29%)</title><rect x="10.0" y="1135" width="4510.6" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="1149.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>all (17 samples, 100%)</title><rect x="10.0" y="1333" width="12780.0" height="15.0" fill="rgb(213,39,9)" rx="2" ry="2" />
-<text  x="13.00" y="1343.5" ></text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="175" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="189.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (5 samples, 29.41%)</title><rect x="10.0" y="373" width="3758.8" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="13.00" y="383.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:41:namesForShard (1 samples, 5.88%)</title><rect x="1513.5" y="55" width="751.8" height="23.0" fill="rgb(233,132,31)" rx="2" ry="2" />
+<text  x="1516.53" y="69.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:41:namesForShard</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (6 samples, 35.29%)</title><rect x="10.0" y="789" width="4510.6" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="799.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (6 samples, 35.29%)</title><rect x="10.0" y="1207" width="4510.6" height="23.0" fill="rgb(241,165,39)" rx="2" ry="2" />
+<text  x="13.00" y="1221.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-locales-2.40-66 (1 samples, 5.88%)</title><rect x="9782.9" y="1253" width="751.8" height="15.0" fill="rgb(253,225,53)" rx="2" ry="2" />
-<text  x="9785.94" y="1263.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-locales-2.40-66</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="247" width="751.7" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="764.76" y="261.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="6024.1" y="709" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="719.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="871" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="8282.41" y="885.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="181" width="751.7" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="764.76" y="191.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="10534.7" y="1783" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="10537.71" y="1797.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (6 samples, 35.29%)</title><rect x="10.0" y="853" width="4510.6" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="863.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (1 samples, 5.88%)</title><rect x="8279.4" y="847" width="751.8" height="23.0" fill="rgb(241,168,40)" rx="2" ry="2" />
+<text  x="8282.41" y="861.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import (1 samples, 5.88%)</title><rect x="7527.6" y="661" width="751.8" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
-<text  x="7530.65" y="671.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:110:11:allPackages (5 samples, 29.41%)</title><rect x="10.0" y="655" width="3758.8" height="23.0" fill="rgb(248,202,48)" rx="2" ry="2" />
+<text  x="13.00" y="669.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:110:11:allPackages</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:20:primop concatStringsSep (1 samples, 5.88%)</title><rect x="10534.7" y="1045" width="751.8" height="15.0" fill="rgb(205,2,0)" rx="2" ry="2" />
-<text  x="10537.71" y="1055.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:20:primop concatStringsSep</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (3 samples, 17.65%)</title><rect x="9782.9" y="1927" width="2255.3" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="9785.94" y="1941.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>«none»:0 (1 samples, 5.88%)</title><rect x="10534.7" y="1125" width="751.8" height="15.0" fill="rgb(225,94,22)" rx="2" ry="2" />
-<text  x="10537.71" y="1135.5" >«none»:0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop isString (1 samples, 5.88%)</title><rect x="8279.4" y="1087" width="751.8" height="23.0" fill="rgb(252,217,52)" rx="2" ry="2" />
+<text  x="8282.41" y="1101.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:29:primop isString</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="149" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="159.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="223" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="1516.53" y="237.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnu-config-2024-01-01 (1 samples, 5.88%)</title><rect x="11286.5" y="1189" width="751.7" height="15.0" fill="rgb(218,60,14)" rx="2" ry="2" />
-<text  x="11289.47" y="1199.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnu-config-2024-01-01</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="919" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="8282.41" y="933.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:update-autotools-gnu-config-scripts-hook (1 samples, 5.88%)</title><rect x="11286.5" y="1221" width="751.7" height="15.0" fill="rgb(236,143,34)" rx="2" ry="2" />
-<text  x="11289.47" y="1231.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:update-autotools-gnu-config-scripts-hook</text>
+<title>all (17 samples, 100%)</title><rect x="10.0" y="1975" width="12780.0" height="23.0" fill="rgb(213,39,9)" rx="2" ry="2" />
+<text  x="13.00" y="1989.5" ></text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (12 samples, 70.59%)</title><rect x="10.0" y="1221" width="9021.2" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="1231.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (12 samples, 70.59%)</title><rect x="10.0" y="1711" width="9021.2" height="23.0" fill="rgb(241,165,39)" rx="2" ry="2" />
+<text  x="13.00" y="1725.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="213" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="1516.53" y="223.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:576:12:isBuiltByNixpkgsCompiler (6 samples, 35.29%)</title><rect x="10.0" y="1231" width="4510.6" height="23.0" fill="rgb(210,26,6)" rx="2" ry="2" />
+<text  x="13.00" y="1245.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:576:12:isBuiltByNixpkgsCompiler</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (5 samples, 29.41%)</title><rect x="10.0" y="389" width="3758.8" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="13.00" y="399.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:95:11:extends (5 samples, 29.41%)</title><rect x="10.0" y="583" width="3758.8" height="23.0" fill="rgb(249,203,48)" rx="2" ry="2" />
+<text  x="13.00" y="597.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:95:11:extends</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-2.40-66 (5 samples, 29.41%)</title><rect x="5272.4" y="821" width="3758.8" height="15.0" fill="rgb(218,62,14)" rx="2" ry="2" />
-<text  x="5275.35" y="831.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-2.40-66</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:364:12:isBuiltByBootstrapFilesCompiler (6 samples, 35.29%)</title><rect x="10.0" y="895" width="4510.6" height="23.0" fill="rgb(211,28,6)" rx="2" ry="2" />
+<text  x="13.00" y="909.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:364:12:isBuiltByBootstrapFilesCompiler</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="213" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="13.00" y="223.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import (1 samples, 5.88%)</title><rect x="7527.6" y="967" width="751.8" height="23.0" fill="rgb(245,187,44)" rx="2" ry="2" />
+<text  x="7530.65" y="981.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (5 samples, 29.41%)</title><rect x="10.0" y="485" width="3758.8" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="495.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:250:9 (1 samples, 5.88%)</title><rect x="9782.9" y="1783" width="751.8" height="23.0" fill="rgb(224,91,21)" rx="2" ry="2" />
+<text  x="9785.94" y="1797.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:250:9</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5 (1 samples, 5.88%)</title><rect x="3768.8" y="565" width="751.8" height="15.0" fill="rgb(250,208,49)" rx="2" ry="2" />
-<text  x="3771.82" y="575.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/trivial.nix:989:5</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:19:4 (1 samples, 5.88%)</title><rect x="8279.4" y="823" width="751.8" height="23.0" fill="rgb(223,85,20)" rx="2" ry="2" />
+<text  x="8282.41" y="837.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:19:4</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:libtool-2.4.7 (1 samples, 5.88%)</title><rect x="8279.4" y="613" width="751.8" height="15.0" fill="rgb(238,153,36)" rx="2" ry="2" />
-<text  x="8282.41" y="623.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:libtool-2.4.7</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs (5 samples, 29.41%)</title><rect x="10.0" y="871" width="3758.8" height="23.0" fill="rgb(247,195,46)" rx="2" ry="2" />
+<text  x="13.00" y="885.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:126:42:isFromNixpkgs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (2 samples, 11.76%)</title><rect x="1513.5" y="229" width="1503.6" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="1516.53" y="239.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="175" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="1516.53" y="189.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bison-3.8.2 (1 samples, 5.88%)</title><rect x="6024.1" y="597" width="751.8" height="15.0" fill="rgb(246,190,45)" rx="2" ry="2" />
-<text  x="6027.12" y="607.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bison-3.8.2</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="319" width="751.7" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="764.76" y="333.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:404:43 (1 samples, 5.88%)</title><rect x="8279.4" y="709" width="751.8" height="15.0" fill="rgb(221,75,17)" rx="2" ry="2" />
-<text  x="8282.41" y="719.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default...</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:504:5:makeSearchPath (1 samples, 5.88%)</title><rect x="10534.7" y="1567" width="751.8" height="23.0" fill="rgb(236,145,34)" rx="2" ry="2" />
+<text  x="10537.71" y="1581.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:504:5:makeSearchPath</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="11286.5" y="1173" width="751.7" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="11289.47" y="1183.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>«none»:0 (1 samples, 5.88%)</title><rect x="10534.7" y="1735" width="751.8" height="23.0" fill="rgb(225,94,22)" rx="2" ry="2" />
+<text  x="10537.71" y="1749.5" >«none»:0</text>
 </g>
 <g >
-<title>&lt;nix/fetchurl.nix&gt;:41:1 (1 samples, 5.88%)</title><rect x="7527.6" y="645" width="751.8" height="15.0" fill="rgb(216,51,12)" rx="2" ry="2" />
-<text  x="7530.65" y="655.5" >&lt;nix/fetchurl.nix&gt;:41:1</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:libtool-2.4.7 (1 samples, 5.88%)</title><rect x="8279.4" y="895" width="751.8" height="23.0" fill="rgb(238,153,36)" rx="2" ry="2" />
+<text  x="8282.41" y="909.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:libtool-2.4.7</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:xgcc-13.3.0 (2 samples, 11.76%)</title><rect x="6775.9" y="725" width="1503.5" height="15.0" fill="rgb(237,149,35)" rx="2" ry="2" />
-<text  x="6778.88" y="735.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:xgcc-13.3.0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (6 samples, 35.29%)</title><rect x="10.0" y="1087" width="4510.6" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="1101.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/gmp/6.x.nix:25:11 (1 samples, 5.88%)</title><rect x="7527.6" y="677" width="751.8" height="15.0" fill="rgb(232,125,30)" rx="2" ry="2" />
-<text  x="7530.65" y="687.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/gmp/6.x.nix:25:11</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:stdenv-linux (4 samples, 23.53%)</title><rect x="9031.2" y="1951" width="3007.0" height="23.0" fill="rgb(205,3,0)" rx="2" ry="2" />
+<text  x="9034.18" y="1965.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:stdenv-linux</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (2 samples, 11.76%)</title><rect x="10.0" y="245" width="1503.5" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="13.00" y="255.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-locales-2.40-66 (1 samples, 5.88%)</title><rect x="9782.9" y="1855" width="751.8" height="23.0" fill="rgb(253,225,53)" rx="2" ry="2" />
+<text  x="9785.94" y="1869.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:glibc-locales-2.40-66</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (12 samples, 70.59%)</title><rect x="10.0" y="1141" width="9021.2" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="13.00" y="1151.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (6 samples, 35.29%)</title><rect x="10.0" y="1327" width="4510.6" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="1341.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (5 samples, 29.41%)</title><rect x="10.0" y="469" width="3758.8" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="13.00" y="479.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:471:12:isBuiltByBootstrapFilesCompiler (6 samples, 35.29%)</title><rect x="10.0" y="1063" width="4510.6" height="23.0" fill="rgb(217,58,14)" rx="2" ry="2" />
+<text  x="13.00" y="1077.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:471:12:isBuiltByBootstrapFilesCompiler</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (12 samples, 70.59%)</title><rect x="10.0" y="1157" width="9021.2" height="15.0" fill="rgb(241,165,39)" rx="2" ry="2" />
-<text  x="13.00" y="1167.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (2 samples, 11.76%)</title><rect x="6775.9" y="1039" width="1503.5" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6778.88" y="1053.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="693" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="8282.41" y="703.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="10.0" y="1015" width="4510.6" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="13.00" y="1029.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assertValidity (1 samples, 5.88%)</title><rect x="4520.6" y="837" width="751.8" height="15.0" fill="rgb(244,182,43)" rx="2" ry="2" />
-<text  x="4523.59" y="847.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:669:18:assert..</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="295" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="1516.53" y="309.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:95:11:extends (5 samples, 29.41%)</title><rect x="10.0" y="405" width="3758.8" height="15.0" fill="rgb(249,203,48)" rx="2" ry="2" />
-<text  x="13.00" y="415.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:95:11:extends</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18 (6 samples, 35.29%)</title><rect x="4520.6" y="1255" width="4510.6" height="23.0" fill="rgb(221,77,18)" rx="2" ry="2" />
+<text  x="4523.59" y="1269.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:33:4 (1 samples, 5.88%)</title><rect x="6775.9" y="677" width="751.7" height="15.0" fill="rgb(249,204,48)" rx="2" ry="2" />
-<text  x="6778.88" y="687.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/shells/bash/bash-5.2-patches.nix:33:4</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18 (1 samples, 5.88%)</title><rect x="3768.8" y="775" width="751.8" height="23.0" fill="rgb(221,77,18)" rx="2" ry="2" />
+<text  x="3771.82" y="789.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (4 samples, 23.53%)</title><rect x="10.0" y="341" width="3007.1" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="13.00" y="351.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:132:12:hasUnfreeLicense (1 samples, 5.88%)</title><rect x="4520.6" y="1159" width="751.8" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="4523.59" y="1173.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:132:12:hasUnfreeLicense</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="10.0" y="917" width="4510.6" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="13.00" y="927.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (6 samples, 35.29%)</title><rect x="10.0" y="1255" width="4510.6" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="1269.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="197" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="1516.53" y="207.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>«none»:0 (1 samples, 5.88%)</title><rect x="10534.7" y="1663" width="751.8" height="23.0" fill="rgb(225,94,22)" rx="2" ry="2" />
+<text  x="10537.71" y="1677.5" >«none»:0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="10.0" y="693" width="4510.6" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="13.00" y="703.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (6 samples, 35.29%)</title><rect x="10.0" y="943" width="4510.6" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="957.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18 (6 samples, 35.29%)</title><rect x="4520.6" y="853" width="4510.6" height="15.0" fill="rgb(221,77,18)" rx="2" ry="2" />
-<text  x="4523.59" y="863.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:165:18</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15:otherPackageSets (1 samples, 5.88%)</title><rect x="3017.1" y="487" width="751.7" height="23.0" fill="rgb(228,109,26)" rx="2" ry="2" />
+<text  x="3020.06" y="501.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15:otherPackageSets</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (6 samples, 35.29%)</title><rect x="10.0" y="821" width="4510.6" height="15.0" fill="rgb(241,165,39)" rx="2" ry="2" />
-<text  x="13.00" y="831.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="247" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="261.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="165" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="13.00" y="175.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gettext-0.21.1 (1 samples, 5.88%)</title><rect x="6024.1" y="967" width="751.8" height="23.0" fill="rgb(232,128,30)" rx="2" ry="2" />
+<text  x="6027.12" y="981.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gettext-0.21.1</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15:otherPackageSets (1 samples, 5.88%)</title><rect x="3017.1" y="341" width="751.7" height="15.0" fill="rgb(228,109,26)" rx="2" ry="2" />
-<text  x="3020.06" y="351.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:327:15:otherPackageSets</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (6 samples, 35.29%)</title><rect x="10.0" y="1375" width="4510.6" height="23.0" fill="rgb(241,165,39)" rx="2" ry="2" />
+<text  x="13.00" y="1389.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:autoreconf-hook (1 samples, 5.88%)</title><rect x="8279.4" y="645" width="751.8" height="15.0" fill="rgb(226,96,23)" rx="2" ry="2" />
-<text  x="8282.41" y="655.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:autoreconf-hook</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (6 samples, 35.29%)</title><rect x="10.0" y="1111" width="4510.6" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="13.00" y="1125.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="8279.4" y="597" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="8282.41" y="607.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/stage.nix:422:1:fix (5 samples, 29.41%)</title><rect x="10.0" y="607" width="3758.8" height="23.0" fill="rgb(236,146,35)" rx="2" ry="2" />
+<text  x="13.00" y="621.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/stage.nix:422:1:fix</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (5 samples, 29.41%)</title><rect x="10.0" y="517" width="3758.8" height="15.0" fill="rgb(207,10,2)" rx="2" ry="2" />
-<text  x="13.00" y="527.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
+<title>«none»:0 (1 samples, 5.88%)</title><rect x="8279.4" y="1135" width="751.8" height="23.0" fill="rgb(225,94,22)" rx="2" ry="2" />
+<text  x="8282.41" y="1149.5" >«none»:0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="133" width="751.7" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="764.76" y="143.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="151" width="751.7" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="764.76" y="165.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="10534.7" y="981" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="10537.71" y="991.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (4 samples, 23.53%)</title><rect x="10.0" y="463" width="3007.1" height="23.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="13.00" y="477.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="133" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="13.00" y="143.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:344:29:primop toString (1 samples, 5.88%)</title><rect x="10534.7" y="1639" width="751.8" height="23.0" fill="rgb(254,227,54)" rx="2" ry="2" />
+<text  x="10537.71" y="1653.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:344:29:primop toString</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/impure.nix:113:1:primop import (12 samples, 70.59%)</title><rect x="10.0" y="1301" width="9021.2" height="15.0" fill="rgb(206,6,1)" rx="2" ry="2" />
-<text  x="13.00" y="1311.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/impure.nix:113:1:primop import</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:zlib-1.3.1 (1 samples, 5.88%)</title><rect x="10534.7" y="1471" width="751.8" height="23.0" fill="rgb(232,128,30)" rx="2" ry="2" />
+<text  x="10537.71" y="1485.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:zlib-1.3.1</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="3768.8" y="517" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="3771.82" y="527.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="199" width="751.7" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="764.76" y="213.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:126:13:optionalString (1 samples, 5.88%)</title><rect x="11286.5" y="1141" width="751.7" height="15.0" fill="rgb(207,13,3)" rx="2" ry="2" />
-<text  x="11289.47" y="1151.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:126:13:optionalString</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="10.0" y="1351" width="4510.6" height="23.0" fill="rgb(222,79,18)" rx="2" ry="2" />
+<text  x="13.00" y="1365.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/glibc/default.nix:119:12:canExecute (1 samples, 5.88%)</title><rect x="5272.4" y="805" width="751.7" height="15.0" fill="rgb(231,122,29)" rx="2" ry="2" />
-<text  x="5275.35" y="815.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/glibc/default.nix:119:12:c..</text>
+<title>/nix/store/6v3sq8m0y8fa795k04r7yrkncj1lqmcg-source/flake.nix:23:17:primop import (12 samples, 70.59%)</title><rect x="10.0" y="1951" width="9021.2" height="23.0" fill="rgb(206,8,2)" rx="2" ry="2" />
+<text  x="13.00" y="1965.5" >/nix/store/6v3sq8m0y8fa795k04r7yrkncj1lqmcg-source/flake.nix:23:17:primop import</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage3-stdenv-linux (1 samples, 5.88%)</title><rect x="10534.7" y="965" width="751.8" height="15.0" fill="rgb(213,37,8)" rx="2" ry="2" />
-<text  x="10537.71" y="975.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage3-stdenv-linux</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable (6 samples, 35.29%)</title><rect x="4520.6" y="1327" width="4510.6" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="4523.59" y="1341.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14 (6 samples, 35.29%)</title><rect x="10.0" y="645" width="4510.6" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="13.00" y="655.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:98:14</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="247" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="1516.53" y="261.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="229" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="13.00" y="239.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gzip-1.13 (2 samples, 11.76%)</title><rect x="10534.7" y="1903" width="1503.5" height="23.0" fill="rgb(221,78,18)" rx="2" ry="2" />
+<text  x="10537.71" y="1917.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gzip-1.13</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-stdenv-linux (1 samples, 5.88%)</title><rect x="11286.5" y="1157" width="751.7" height="15.0" fill="rgb(206,7,1)" rx="2" ry="2" />
-<text  x="11289.47" y="1167.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bootstrap-stage4-stdenv-linux</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="271" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="13.00" y="285.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (12 samples, 70.59%)</title><rect x="10.0" y="1029" width="9021.2" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="13.00" y="1039.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:58:4:primop mapAttrs (4 samples, 23.53%)</title><rect x="10.0" y="415" width="3007.1" height="23.0" fill="rgb(238,154,36)" rx="2" ry="2" />
+<text  x="13.00" y="429.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/by-name-overlay.nix:58:4:primop mapAttrs</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:132:12:hasUnfreeLicense (1 samples, 5.88%)</title><rect x="4520.6" y="789" width="751.8" height="15.0" fill="rgb(230,117,28)" rx="2" ry="2" />
-<text  x="4523.59" y="799.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:132:12:hasUnfreeLi..</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:xgcc-13.3.0 (2 samples, 11.76%)</title><rect x="6775.9" y="1063" width="1503.5" height="23.0" fill="rgb(237,149,35)" rx="2" ry="2" />
+<text  x="6778.88" y="1077.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:xgcc-13.3.0</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs (12 samples, 70.59%)</title><rect x="10.0" y="1045" width="9021.2" height="15.0" fill="rgb(241,165,39)" rx="2" ry="2" />
-<text  x="13.00" y="1055.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:125:35:isFromNixpkgs</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="9782.9" y="1879" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="9785.94" y="1893.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gmp-6.3.0 (1 samples, 5.88%)</title><rect x="7527.6" y="693" width="751.8" height="15.0" fill="rgb(211,28,6)" rx="2" ry="2" />
-<text  x="7530.65" y="703.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gmp-6.3.0</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:362:19:optionals (1 samples, 5.88%)</title><rect x="10534.7" y="1615" width="751.8" height="23.0" fill="rgb(230,116,27)" rx="2" ry="2" />
+<text  x="10537.71" y="1629.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/compilers/gcc/default.nix:362:19:optionals</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (5 samples, 29.41%)</title><rect x="10.0" y="565" width="3758.8" height="15.0" fill="rgb(251,215,51)" rx="2" ry="2" />
-<text  x="13.00" y="575.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:404:16:primop concatStringsSep (1 samples, 5.88%)</title><rect x="8279.4" y="1063" width="751.8" height="23.0" fill="rgb(243,175,42)" rx="2" ry="2" />
+<text  x="8282.41" y="1077.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:404:16:primop con..</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:576:12:isBuiltByNixpkgsCompiler (6 samples, 35.29%)</title><rect x="10.0" y="837" width="4510.6" height="15.0" fill="rgb(210,26,6)" rx="2" ry="2" />
-<text  x="13.00" y="847.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:576:12:isBuiltByNixpkgsCompiler</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="175" width="751.7" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="764.76" y="189.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="165" width="751.7" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="764.76" y="175.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:724:12:isBuiltByNixpkgsCompiler (12 samples, 70.59%)</title><rect x="10.0" y="1567" width="9021.2" height="23.0" fill="rgb(243,174,41)" rx="2" ry="2" />
+<text  x="13.00" y="1581.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:724:12:isBuiltByNixpkgsCompiler</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (3 samples, 17.65%)</title><rect x="6024.1" y="773" width="2255.3" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="6027.12" y="783.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable (1 samples, 5.88%)</title><rect x="3768.8" y="847" width="751.8" height="23.0" fill="rgb(250,210,50)" rx="2" ry="2" />
+<text  x="3771.82" y="861.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37 (1 samples, 5.88%)</title><rect x="8279.4" y="581" width="751.8" height="15.0" fill="rgb(241,168,40)" rx="2" ry="2" />
-<text  x="8282.41" y="591.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:bash-5.2p37</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:610:18 (1 samples, 5.88%)</title><rect x="4520.6" y="1207" width="751.8" height="23.0" fill="rgb(228,107,25)" rx="2" ry="2" />
+<text  x="4523.59" y="1221.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:610:18</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:110:11:allPackages (5 samples, 29.41%)</title><rect x="10.0" y="453" width="3758.8" height="15.0" fill="rgb(248,202,48)" rx="2" ry="2" />
-<text  x="13.00" y="463.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:110:11:allPackages</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="10534.7" y="1495" width="751.8" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="10537.71" y="1509.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnugrep-3.11 (1 samples, 5.88%)</title><rect x="9782.9" y="1285" width="751.8" height="15.0" fill="rgb(217,58,13)" rx="2" ry="2" />
-<text  x="9785.94" y="1295.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gnugrep-3.11</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48 (12 samples, 70.59%)</title><rect x="10.0" y="1591" width="9021.2" height="23.0" fill="rgb(207,10,2)" rx="2" ry="2" />
+<text  x="13.00" y="1605.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:90:48</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (3 samples, 17.65%)</title><rect x="9782.9" y="1301" width="2255.3" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="9785.94" y="1311.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:47 (1 samples, 5.88%)</title><rect x="10534.7" y="1519" width="751.8" height="23.0" fill="rgb(225,94,22)" rx="2" ry="2" />
+<text  x="10537.71" y="1533.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/strings.nix:465:47</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles (6 samples, 35.29%)</title><rect x="10.0" y="805" width="4510.6" height="15.0" fill="rgb(222,79,18)" rx="2" ry="2" />
-<text  x="13.00" y="815.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:123:26:isFromBootstrapFiles</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="247" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="13.00" y="261.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:167:5:primop import (5 samples, 29.41%)</title><rect x="10.0" y="437" width="3758.8" height="15.0" fill="rgb(236,143,34)" rx="2" ry="2" />
-<text  x="13.00" y="447.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/top-level/default.nix:167:5:primop import</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="127" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="13.00" y="141.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="9782.9" y="1237" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="9785.94" y="1247.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (6 samples, 35.29%)</title><rect x="10.0" y="967" width="4510.6" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="981.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:98:8:primop isAttrs (1 samples, 5.88%)</title><rect x="4520.6" y="757" width="751.8" height="15.0" fill="rgb(207,9,2)" rx="2" ry="2" />
-<text  x="4523.59" y="767.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/check-meta.nix:98:8:primop isAttrs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/gmp/6.x.nix:25:11 (1 samples, 5.88%)</title><rect x="7527.6" y="991" width="751.8" height="23.0" fill="rgb(232,125,30)" rx="2" ry="2" />
+<text  x="7530.65" y="1005.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/libraries/gmp/6.x.nix:25:11</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default.nix:404:16:primop concatStringsSep (1 samples, 5.88%)</title><rect x="8279.4" y="725" width="751.8" height="15.0" fill="rgb(243,175,42)" rx="2" ry="2" />
-<text  x="8282.41" y="735.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/development/interpreters/python/cpython/default...</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assertMsg (1 samples, 5.88%)</title><rect x="10534.7" y="1711" width="751.8" height="23.0" fill="rgb(245,188,45)" rx="2" ry="2" />
+<text  x="10537.71" y="1725.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/make-derivation.nix:688:18:assertMsg</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gzip-1.13 (2 samples, 11.76%)</title><rect x="10534.7" y="1285" width="1503.5" height="15.0" fill="rgb(221,78,18)" rx="2" ry="2" />
-<text  x="10537.71" y="1295.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:gzip-1.13</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder (6 samples, 35.29%)</title><rect x="10.0" y="1303" width="4510.6" height="23.0" fill="rgb(230,117,28)" rx="2" ry="2" />
+<text  x="13.00" y="1317.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:73:19:folder</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import (1 samples, 5.88%)</title><rect x="6024.1" y="565" width="751.8" height="15.0" fill="rgb(245,187,44)" rx="2" ry="2" />
-<text  x="6027.12" y="575.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/build-support/fetchurl/boot.nix:19:1:primop import</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:166:1:dfold (12 samples, 70.59%)</title><rect x="10.0" y="1855" width="9021.2" height="23.0" fill="rgb(212,33,7)" rx="2" ry="2" />
+<text  x="13.00" y="1869.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:166:1:dfold</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (5 samples, 29.41%)</title><rect x="10.0" y="357" width="3758.8" height="15.0" fill="rgb(232,127,30)" rx="2" ry="2" />
-<text  x="13.00" y="367.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="1513.5" y="271" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="1516.53" y="285.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs (1 samples, 5.88%)</title><rect x="3768.8" y="549" width="751.8" height="15.0" fill="rgb(233,132,31)" rx="2" ry="2" />
-<text  x="3771.82" y="559.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/customisation.nix:175:10:primop isAttrs</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="151" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="13.00" y="165.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="197" width="751.8" height="15.0" fill="rgb(241,169,40)" rx="2" ry="2" />
-<text  x="13.00" y="207.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
+<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8 (1 samples, 5.88%)</title><rect x="9782.9" y="1807" width="751.8" height="23.0" fill="rgb(238,152,36)" rx="2" ry="2" />
+<text  x="9785.94" y="1821.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:python3-minimal-3.12.8</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable (6 samples, 35.29%)</title><rect x="4520.6" y="901" width="4510.6" height="15.0" fill="rgb(250,210,50)" rx="2" ry="2" />
-<text  x="4523.59" y="911.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/linux/default.nix:198:14:makeOverridable</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="175" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="13.00" y="189.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="761.8" y="229" width="751.7" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="764.76" y="239.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:35 (1 samples, 5.88%)</title><rect x="1513.5" y="79" width="751.8" height="23.0" fill="rgb(248,199,47)" rx="2" ry="2" />
+<text  x="1516.53" y="93.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1079:35</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (1 samples, 5.88%)</title><rect x="9782.9" y="1269" width="751.8" height="15.0" fill="rgb(226,98,23)" rx="2" ry="2" />
-<text  x="9785.94" y="1279.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (2 samples, 11.76%)</title><rect x="10534.7" y="1831" width="1503.5" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="10537.71" y="1845.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1466:7:binaryMerge (4 samples, 23.53%)</title><rect x="10.0" y="261" width="3007.1" height="15.0" fill="rgb(219,67,16)" rx="2" ry="2" />
-<text  x="13.00" y="271.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1466:7:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go (12 samples, 70.59%)</title><rect x="10.0" y="1495" width="9021.2" height="23.0" fill="rgb(251,215,51)" rx="2" ry="2" />
+<text  x="13.00" y="1509.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/booter.nix:74:20:go</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:86:12:optionals (1 samples, 5.88%)</title><rect x="3768.8" y="453" width="751.8" height="15.0" fill="rgb(225,93,22)" rx="2" ry="2" />
-<text  x="3771.82" y="463.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/pkgs/stdenv/generic/default.nix:86:12:optionals</text>
+<title>&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr (3 samples, 17.65%)</title><rect x="6024.1" y="1135" width="2255.3" height="23.0" fill="rgb(226,98,23)" rx="2" ry="2" />
+<text  x="6027.12" y="1149.5" >&lt;nix/derivation-internal.nix&gt;:50:17:primop getAttr</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="165" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="175.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends (5 samples, 29.41%)</title><rect x="10.0" y="559" width="3758.8" height="23.0" fill="rgb(232,127,30)" rx="2" ry="2" />
+<text  x="13.00" y="573.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/fixed-points.nix:325:16:extends</text>
 </g>
 <g >
-<title>&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-wrapper-2.43.1 (1 samples, 5.88%)</title><rect x="6024.1" y="725" width="751.8" height="15.0" fill="rgb(233,130,31)" rx="2" ry="2" />
-<text  x="6027.12" y="735.5" >&lt;nix/derivation-internal.nix&gt;:37:12:primop derivationStrict:binutils-wrapper-2.43.1</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="151" width="751.8" height="23.0" fill="rgb(215,50,12)" rx="2" ry="2" />
+<text  x="2268.29" y="165.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
 </g>
 <g >
-<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge (1 samples, 5.88%)</title><rect x="2265.3" y="181" width="751.8" height="15.0" fill="rgb(215,50,12)" rx="2" ry="2" />
-<text  x="2268.29" y="191.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:60:binaryMerge</text>
+<title>/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge (1 samples, 5.88%)</title><rect x="10.0" y="319" width="751.8" height="23.0" fill="rgb(241,169,40)" rx="2" ry="2" />
+<text  x="13.00" y="333.5" >/nix/store/sd2qk9cqwj45c5wnijj3vvxzzr28rw4q-source/lib/attrsets.nix:1457:11:binaryMerge</text>
 </g>
 </g>
 </svg>
