@@ -53,7 +53,7 @@ def main() -> None:
         "24.11",
         "25.05",
     ]
-    attrs = ["ec2", "kde", "lapp"]
+    attrs = ["ec2", "kde", "lapp", "stdenv"]
     for attr, version in product(attrs, versions):
         output_folder = Path("outputs")
         if (output_folder / get_output_path(attr, version)).exists():

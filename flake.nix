@@ -20,6 +20,7 @@
       ec2 = release-combined.nixos.closures.ec2.${system};
       kde = release-combined.nixos.closures.kde.${system};
       lapp = release-combined.nixos.closures.lapp.${system};
+      stdenv = (import test_nixpkgs { inherit system; }).stdenv;
       python = pkgs.python313;
 
 
@@ -32,6 +33,7 @@
           nix.packages.${system}.default
           python
           pkgs.uv
+          pkgs.flamegraph
         ];
         env =
           {
@@ -51,8 +53,9 @@
       };
 
       packages.${system} = {
-        inherit ec2 kde lapp;
+        inherit ec2 kde lapp stdenv;
       };
+
 
     };
 }
